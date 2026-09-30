@@ -31,7 +31,7 @@ CREATE TABLE `pessoas` (
   `altura` decimal(3,2) DEFAULT NULL,
   `nacionalidade` varchar(20) DEFAULT 'Brasil',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3;
+) ENGINE=MyISAM AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb3;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -40,6 +40,7 @@ CREATE TABLE `pessoas` (
 
 LOCK TABLES `pessoas` WRITE;
 /*!40000 ALTER TABLE `pessoas` DISABLE KEYS */;
+INSERT INTO `pessoas` VALUES (1,'Vitor','2008-01-15','M',78.50,1.80,'Brasil'),(2,'Isabela','2008-07-14','F',60.00,1.60,'Brasil'),(3,'Bryan','2012-05-10','F',60.00,1.60,'Brasil'),(4,'Miro','2010-05-10','M',32.00,1.53,'Paris'),(5,'Ana','2015-05-10','F',67.40,1.55,'Russia'),(6,'Pedro','2011-03-29','M',112.40,1.93,'Russia');
 /*!40000 ALTER TABLE `pessoas` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -52,4 +53,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-09-29  0:31:34
+-- Dump completed on 2026-09-30  1:03:11
